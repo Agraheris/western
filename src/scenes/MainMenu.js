@@ -11,7 +11,7 @@ export class MainMenu extends Scene
     {
         this.add.image(512, 384, 'background');
 
-        this.add.image(200, 500, 'sherifBob');
+        this.add.image(265, 500, 'sherifBob');
 
         this.add.rectangle(700, 320, 500, 575, 0x000000, 0.65);
         this.add

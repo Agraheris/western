@@ -9,20 +9,27 @@ export class Game extends Scene
 
     create ()
     {
-        this.cameras.main.setBackgroundColor(0x00ff00);
 
-        this.add.image(512, 384, 'background').setAlpha(0.5);
+        this.add.image(512, 384, 'backgroundGame');
+        this.add.image(300,700, 'W');
+        this.add.image(700,625, 'A');
+        this.add.image(950,450, 'N');
+        this.add.image(700,450, 'T');
+        this.add.image(500,425, 'E');
+        this.add.image(250,425, 'D');
 
-        this.add.text(512, 384, 'Make something fun!\nand share it with us:\nsupport@phaser.io', {
-            fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
-            stroke: '#000000', strokeThickness: 8,
-            align: 'center'
-        }).setOrigin(0.5);
-
-        this.input.once('pointerdown', () => {
-
-            this.scene.start('GameOver');
-
+        this.anims.create({
+            key: 'idle', // clé de l'animation
+            frames: this.anims.generateFrameNumbers('sherifIdle', {
+                start: 0, // première frame
+                end: 3, 
+            }),
         });
+
+        // Ajouter et jouer l'animation sur le sprite
+        const sherif = this.add.sprite(400, 200, 'sherifIdle');
+
+        sherif.play('idle'); // démarrer l'animation
+
     }
 }

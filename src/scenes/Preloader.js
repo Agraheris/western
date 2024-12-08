@@ -20,9 +20,6 @@ export class Preloader extends Scene
 
     preload ()
     {
-            this.load.spritesheet('sherifIdle','assets/idle_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
-            this.load.spritesheet('sherifRunRight', 'assets/walk_right_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
-            this.load.spritesheet('sherifRunLeft', 'assets/walk_left_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath('assets');
 

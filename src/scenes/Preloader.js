@@ -14,21 +14,18 @@ export class Preloader extends Scene
 
         this.add.image(512, 384, 'sherifBob');
 
-        this.add.image(512, 384, 'backgroundGame');
 
 
     }
 
     preload ()
     {
+            this.load.spritesheet('sherifIdle','assets/idle_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
+            this.load.spritesheet('sherifRunRight', 'assets/walk_right_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
+            this.load.spritesheet('sherifRunLeft', 'assets/walk_left_spritesheet.png', { frameWidth: 32, frameHeight: 32 });
         //  Load the assets for the game - Replace with your own assets
         this.load.setPath('assets');
 
-
-        this.load.spritesheet('sherifIdle', 'assets/idle_spritesheet.png', {
-            frameWidth: 16,
-            frameHeight: 16, 
-        });
     }
 
     create ()

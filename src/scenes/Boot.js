@@ -21,10 +21,21 @@ export class Boot extends Scene
         this.load.image('T', 'assets/T.png' );
         this.load.image('E', 'assets/E.png' );
         this.load.image('D', 'assets/D.png' );
+        
         this.load.spritesheet('sherifIdle', 'assets/idle_spritesheet.png', {
-            frameWidth: 16,
-            frameHeight: 16, 
+            frameWidth: 160,
+            frameHeight: 160, 
         });
+        this.load.spritesheet('sherifRunLeft', 'assets/walk_left_spritesheet.png', {
+            frameWidth: 160,
+            frameHeight: 160, 
+        });
+
+        this.load.spritesheet('sherifRunRight', 'assets/walk_right_spritesheet.png', {
+            frameWidth: 160,
+            frameHeight: 160, 
+        });
+        this.load.image('cv', 'assets/cv.png');
 
       
     }

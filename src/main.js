@@ -10,6 +10,13 @@ const config = {
     height: 768,
     parent: 'game-container',
 
+    physics: {
+      default: 'matter',
+      matter: {
+          debug: true, 
+      },
+  },
+
     scene: [
         Boot,
         Preloader,

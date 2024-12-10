@@ -13,7 +13,7 @@ export class GameOver extends Scene {
 
         // Ajouter une interaction sur clic
         cvImage.on('pointerdown', () => {
-            window.open('https://drive.google.com/file/d/1-UTTVFioh3_CQiO-yBnvxDeue8b9uOeo/view?usp=drive_link', '_blank'); // Ouvre le CV dans un nouvel onglet
+            window.open('https://drive.google.com/file/d/1-hVaimSqozlpUnLPSo37ECKZ4itDNaVw/view?usp=drive_link', '_blank'); // Ouvre le CV dans un nouvel onglet
         });
 
         // Ajouter le rectangle pour le texte de fond
